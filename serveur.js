@@ -4,6 +4,8 @@ const port = 3000
 const version = "v1"
 const router = require('./routes/routes')
 
+app.use(express.json())
+app.use(express.urlencoded({extended:true}))
 app.use(`/api/${version}/`, router)
 
 app.listen(port, () => {

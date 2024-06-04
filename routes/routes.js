@@ -11,6 +11,7 @@ router.post('/', (req, res) => {
 })
 
 router.get('/music', controllerMusic.find)
+router.post('/music', controllerMusic.find)
 router.get('/music/:id', controllerMusic.findByID)
 router.get('/music/random', controllerMusic.random)
 
